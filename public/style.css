@@ -290,6 +290,65 @@ footer{
     padding: 20px;
 }
 
+    @media only screen
+    and (min-device-width : 768px)
+    {
+        #header{
+            height: 50vh;
+        }
+
+        /*BOXES*/
+        .boxes{
+            margin-top: 15%;
+        }
+
+        .middle-text{
+            padding-top: 5%;
+        }
+        .second{
+            right: 40px;
+        }
+        #about{
+            margin-top: 2%;
+            color: ghostwhite;
+            position: relative;
+        }
+   /*GET IN TOUCH*/
+        .get-in-touch .textarea1{
+            margin-top: 40px;
+        }
+
+        .get-in-touch textarea{
+            width: 300px;
+
+        }
+
+        .get-in-touch input{
+            background-color: transparent;
+            border:none;
+            border-bottom: grey 1px solid;
+            position:absolute;
+            top:20px;
+            margin-right: 20px;
+            width:140px;
+        }
+
+        .get-in-touch input:focus  {
+            background-color: transparent;
+            outline: none;
+            border-bottom: grey 1px solid;
+            transition: .7s ease;
+            width:150px;
+            color:white;
+        }
+    }
+
+
+
+
+
+
+
 @media screen and (max-width:700px) {
 
 

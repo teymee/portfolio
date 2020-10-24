@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Nuel||Portfolio</title>
+    <title>Teymee | Portfolio</title>
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -126,10 +126,10 @@
 
 
 {{--BOXES--}}
-<div id="about " class="experiment animated " data-aos="fade-up" >
+<div id="about " class="experiment animated "  >
     <div class="container">
         <div class="row ">
-            <div class="col-xl-5 middle-text">
+            <div class="col-xl-5 middle-text" data-aos="fade-up">
                 <h2><strong>We've partnered with awesome folks</strong></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur adipisicing elit. Animi,
                     atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident.</p>
@@ -138,7 +138,9 @@
                 {{--                    <img class="img-fluid" src="{{asset('images/about.svg')}}" alt="logo" >--}}
             </div>
 
-            <div class="col-xl-7 pl-5 boxes">
+            <div class="col-xl-7 pl-5 boxes" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                 <div class="box">
                     <div class="upper"></div>
                     <div class="middle">
