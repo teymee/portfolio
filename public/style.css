@@ -297,6 +297,34 @@ footer{
             height: 50vh;
         }
 
+        .navbar {
+            margin-top: 10px;
+        }
+        .navbar .navbar-nav  {
+
+            background-color: #BD11FA;
+            color: #1d2c43;
+        }
+        .navbar .navbar-nav > li >a{
+
+
+            text-align: center;
+            padding-top: 20px !important;
+
+        }
+        .navbar .navbar-nav > li >a {
+            color:ghostwhite !important;
+        }
+
+        .navbar .navbar-nav > li:last-child{
+            padding-bottom: 20px !important;
+        }
+
+        .navbar .navbar-nav > li > a:hover {
+            color:#BD11FA !important;
+        }
+
+
         /*BOXES*/
         .boxes{
             margin-top: 15%;
