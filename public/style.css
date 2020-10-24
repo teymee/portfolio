@@ -60,7 +60,7 @@ hr{
 
                     /*NAVBAR*/
 #header{
-height: 100vh;
+height: auto;
     overflow: hidden;
     background-color: #21212E;
     position: relative;
@@ -105,9 +105,9 @@ nav .navbar-nav li  a:hover{
 }
 
 
-
 .middle-text{
     padding-top: 10%;
+    margin-bottom: 50px;
 }
 .middle-text p{
     padding-top: 20px;
@@ -292,7 +292,7 @@ footer{
 
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     {
         #header{
             height: 50vh;
