@@ -6,7 +6,7 @@
 
     <title>Nuel||Portfolio</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
                 {{-- NAVBAR--}}
                 <nav data-aos="fade-down" class="navbar fixed-top navbar-expand-lg navbar-dark ">
                     <a class="navbar-brand" href="#"><img src="{{asset('images/logo.png')}}" alt="logo" height="50">
-                        NUEL</a>
+                        TEYMEE</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -332,14 +332,14 @@
     <div class="container ">
         <div class="row">
             <div class="col-sm-3 d-flex justify-content-center">
-                <a class="navbar-brand" href="#"><img src="{{asset('images/logo.png')}}" alt="logo" height="50">NUEL
+                <a style="color: ghostwhite" class="navbar-brand" href="#"><img src="{{asset('images/logo.png')}}" alt="logo" height="50"> TEYMEE
                 </a>
             </div>
 
-            <div class="col-sm-7 d-flex justify-content-center ">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                    eaque eius esse et harum inventore ipsam  nam necessitatibus nemo pariatur provident.</p>
-            </div>
+{{--            <div class="col-sm-7 d-flex justify-content-center ">--}}
+{{--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,--}}
+{{--                    eaque eius esse et harum inventore ipsam  nam necessitatibus nemo pariatur provident.</p>--}}
+{{--            </div>--}}
 
             <div class="col-sm-2 d-flex justify-content-center">
                 <p>Copyright &copy;2020 </p>
