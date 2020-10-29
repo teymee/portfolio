@@ -443,7 +443,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     .showcase{
         margin-top: 12%;
     }
-    .showcase h2 {
+    .showcase h1 {
         font-size: 19px;
     }
 

@@ -388,6 +388,8 @@
 </div>
 
 @auth()
+
+    @if($inboxes->count() > 0)
 <div class="table-responsive" id="messages">
     <table class="table table-hover table-dark">
         <thead>
@@ -414,6 +416,7 @@
     </div>
 
 </div>
+    @endif
 @endauth
 
 <footer>
