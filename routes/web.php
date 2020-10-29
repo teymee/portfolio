@@ -1,5 +1,6 @@
 <?php
 
+use App\Indox;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $inboxes = Indox::paginate(10);
+    return view('welcome', compact('inboxes'));
 });
+
+Route::post('/message', 'IndoxController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

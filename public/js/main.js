@@ -12,8 +12,9 @@ var typed_2 = new Typed('#typed_2',{
 
 var typed = new Typed('#typed',{
     strings:[
-        'Welcome',
-        'Enjoy your stay'
+        ' AMAZING TOGETHER...',
+        'UNIQUE...'
+
     ],
 
     typeSpeed:75,
@@ -24,5 +25,4 @@ var typed = new Typed('#typed',{
 
 
 
-
-
+$('.success-alert').fadeIn().delay(6000).fadeOut().delay(6000);

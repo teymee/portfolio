@@ -31,6 +31,18 @@
 <body>
 
 <header id="header">
+
+    @if(session()->has('session_message'))
+        <div class="d-flex justify-content-center" data-aos="fade-in">
+            <div class="alert alert-success text-center success-alert  col-12" >
+                <p class="text-center">{{session()->get('session_message')}}</p>
+            </div>
+        </div>
+
+    @endif
+
+
+
     <div class="row">
 
         {{--SOCIALS--}}
@@ -38,10 +50,10 @@
 
             <div class="sidebar position-fixed">
                 <div class="socials ">
-                    <a href=""><i class="fab fa-github "></i></a>
-                    <a href=""><i class="fab fa-facebook-f "></i></a>
-                    <a href=""><i class="fab fa-instagram "></i></a>
-                    <a href=""><i class="fab fa-twitter "></i></a>
+                    <a href="https://github.com/teymee" target="_blank"><i class="fab fa-github "></i></a>
+{{--                    <a href=""><i class="fab fa-facebook-f "></i></a>--}}
+                    <a href=""><i class="fab fa-instagram " target="_blank"></i></a>
+                    <a href="https://twitter.com/_teymee?s=09" target="_blank"><i class="fab fa-twitter "></i></a>
                 </div>
             </div>
         </div>
@@ -50,9 +62,14 @@
 
 
                 {{-- NAVBAR--}}
-                <nav data-aos="fade-down" class="navbar fixed-top navbar-expand-lg navbar-dark ">
-                    <a class="navbar-brand" href="#"><img src="{{asset('images/logo.png')}}" alt="logo" height="50">
-                        TEYMEE</a>
+                <nav  data-aos="fade-down" class="navbar fixed-top navbar-expand-lg navbar-dark ">
+                    <a class="navbar-brand position-relative" href="#" >
+                        <img  class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80">
+
+                           <span class="teymee" style="position:absolute; left:50%; top:35%; font-size:20px;">
+                              <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span></p>
+                           </span>
+                       </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -61,24 +78,44 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class=" {{request()->is('/') || request()->is('#header') ? "nav-item active" :" "}}">
+                                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#aboutt">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
-                            {{--                        <button class="button  " type="submit">Search</button>--}}
+                            @auth()
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#messages">Messages</a>
+                                </li>
+
+                                <li class="nav-item dropdown" style="list-style: none;">
+                                    <a  style="color: ghostwhite" class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Welcome  {{ucwords(strtolower(auth()->user()->name))}}</a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdown04" >
+                                        <form action="/logout" method="post" >
+                                            @csrf
+                                            @method('POST')
+                                            <div class="container">
+                                                <button  role="submit" style=" cursor:pointer; border: none; background-color: transparent; color: black; text-align: center; font-size: 13px">
+                                                    <span class="menu-title">Logout</span>
+                                                </button>
+                                            </div>
+                                        </form>
+
+
+                                    </div>
+                                </li>
+                            @endauth
                         </ul>
-                        {{--                <form class="form-inline my-2 my-lg-0">--}}
-                        {{--                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">--}}
-                        {{--                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>--}}
-                        {{--                </form>--}}
+
                     </div>
                 </nav>
 
@@ -91,9 +128,10 @@
 {{--                                <h1> <strong>Hi</strong> </h1> <hr>--}}
 
 {{--                            </div>--}}
-                            <h2 class="heading"> <strong>Hi I'm <span id="typed"></span></strong> </h2>
+                            <h1 class="heading"> <strong>LET'S BUILD SOMETHING <br>
+                                    <span id="typed"></span></strong> </h1>
 
-                            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque culpa iustoi</p>
+
                         </div>
                         <div class="col-md-6 " data-aos="fade-left">
                             <img class="img-fluid" src="{{asset('images/me1 (2).svg')}}" alt="logo">
@@ -119,66 +157,72 @@
 <div class="d-flex flex-row justify-content-start" style="margin-top: 10%;"   data-aos="fade-up">
     <div class="d-flex flex-column">
 
-        <img src="{{asset('images/logo.png')}}" alt="" class="img-fluid" height="100" width="100">
+        <img src="{{asset('images/logo.png')}}" alt="" class="img-fluid" height="100" width="50">
 
     </div>
 </div>
 
 
 {{--BOXES--}}
-<div id="about " class="experiment animated "  >
-    <div class="container">
-        <div class="row ">
-            <div class="col-xl-5 middle-text" data-aos="fade-up">
-                <h2><strong>We've partnered with awesome folks</strong></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur adipisicing elit. Animi,
-                    atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident.</p>
+<div id="services">
+    <div id="about" class="experiment animated "  >
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-5 middle-text" data-aos="fade-up">
+                    <h2><strong>We've partnered with awesome folks</strong></h2>
+                    <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
+                        accessibility testing</p>
 
-                <button class="button1">All Features</button>
-                {{--                    <img class="img-fluid" src="{{asset('images/about.svg')}}" alt="logo" >--}}
-            </div>
+                    <button class="button1">All Features</button>
+                    {{--                    <img class="img-fluid" src="{{asset('images/about.svg')}}" alt="logo" >--}}
+                </div>
 
-            <div class="col-xl-7 pl-5 boxes" data-aos="flip-left"
-                 data-aos-easing="ease-out-cubic"
-                 data-aos-duration="2000">
-                <div class="box">
-                    <div class="upper"></div>
-                    <div class="middle">
-                        <i class="far fa-lightbulb fa-2x"></i>
+                <div class="col-xl-7 pl-5 boxes" data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
+                    <div class="box">
+                        <div class="upper"></div>
+                        <div class="middle">
+                            <i class="far fa-lightbulb fa-2x"></i>
+
+                        </div>
+                        <div class="bottom">
+                            <h5><strong>UI/UX Design</strong></h5>
+                            <p>Beautifully handcrafted designs built using the latest technologies that engage your audience.</p>
+                        </div>
+
                     </div>
-                    <div class="bottom">
-                        <h5><strong>Customize</strong></h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, nesciunt!</p>
+                    <div class="box second">
+                        <div class="upper"></div>
+                        <div class="middle">
+                            <i class="fas fa-mobile-alt fa-2x"></i>
+                        </div>
+                        <div class="bottom">
+                            <h5><strong>Performance, SEO, &
+                                    accessibility testing</strong></h5>
+                            <p>Make your website fast, easy to find, and reach the widest audience possible.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box second">
-                    <div class="upper"></div>
-                    <div class="middle">
-                        <i class="fas fa-laptop fa-2x"></i>
-                    </div>
-                    <div class="bottom">
-                        <h5><strong>Customize</strong></h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, nesciunt!</p>
-                    </div>
-                </div>
-                <div class="box third ">
-                    <div class="upper"></div>
-                    <div class="middle">
-                        <i class="fas fa-mobile-alt fa-2x"></i>
-                    </div>
-                    <div class="bottom">
-                        <h5><strong>Customize</strong></h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, nesciunt!</p>
+                    <div class="box third ">
+                        <div class="upper"></div>
+                        <div class="middle">
+                            <i class="fas fa-laptop fa-2x"></i>
+                        </div>
+                        <div class="bottom">
+                            <h5><strong>Web Development</strong></h5>
+                            <p>Website Creation for your businesses or platforms</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>
 
+
 {{--SQUARE--}}
-<div class="d-flex flex-row justify-content-end " style="margin-top: 10%;" data-aos="flip-up">
+<div id="aboutt" class="d-flex flex-row justify-content-end " style="margin-top: 10%;" data-aos="flip-up">
     <div class="d-flex flex-column">
         <img src="{{asset('images/square.png')}}" alt="" class="img-fluid imgs" height="100" width="150">
     </div>
@@ -187,7 +231,7 @@
 
 {{-- PROGRSS--}}
 
-<div class="bars" data-aos="flip-up" >
+<div class="bars"  data-aos="flip-up" >
     <div class="container">
         <div class=" d-flex flex-row flex-wrap justify-content-between row">
 
@@ -198,8 +242,9 @@
             <div class=" d-flex flex-column col-md-6 about-text">
                 <h6 class="heading"> <strong>ABOUT ME</strong></h6>
                 <h4 class="heading"> <strong>I'm Okorie Emmanuel & <span id="typed_2"></span> </strong></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis laudantium libero
-                    molestias quam! Animi aspernatur consequatur culpa dolore, facilis reiciendis.</p>
+                <p>I'm a Freelance Fullstack Web developer working remotely with
+                    the passion and focus of continually learning and building/developing awesome and complicated projects.
+                    Below are my current versatilities and progress..</p>
 
                 <div class="bar-section">
                     <div class="d-flex flex-row flex-wrap justify-content-between">
@@ -284,7 +329,7 @@
 
 {{--GET IN TOUCH--}}
 
-<div class="container  get-in-touch "  data-aos="zoom-in">
+<div class="container  get-in-touch " id="contact" data-aos="zoom-in">
 
     <div class="row d-flex justify-content-between " >
         <div class="col-md-6 ">
@@ -294,34 +339,46 @@
         <div class="col-md-6 about-text">
             <h4 style="color: ghostwhite" class="my-3"><strong>GET IN TOUCH</strong></h4>
 
-            <form action="" method="post" style="width: 100%" >
+            <form action="/message" method="post" style="width: 100%" >
+                @csrf
                 <div class="row" style="margin-bottom: 500px">
                     <div class="col">
                         <label style="margin-right: 90px">
-                            <input  type="text" >
+                            <input  type="text" name="name">
                             <span style="color: grey">Name</span>
                         </label>
-
+                        @error('name')
+                        <p style="color:red">{{$message}}</p>
+                        @enderror
                     </div>
 
                     <div class="space"></div>
                     <div class="col">
                         <label>
-                            <input  type="email" >
+                            <input  type="email" name="email">
                             <span style="color: grey">Email</span>
                         </label>
 {{--                        <label for="">Email</label>--}}
 {{--                        <input  type="email" class="form-control">--}}
+                        @error('email')
+                        <p style="color:red">{{$message}}</p>
+                        @enderror
                     </div>
 
                 </div>
                 <br>
                 <div class="position-absolute textarea1" style="top: 120px; width: 100%">
                     <label >
-                        <textarea name="" id="" cols="10" rows="2" class="my-5 form-control"></textarea>
+                        <textarea id="" cols="10" rows="2" class="my-5 form-control" name="message"></textarea>
+
                         <span style="color: grey">Message</span>
+                        @error('message')
+                        <p style="color:red; position:absolute; top:0px;">{{$message}}</p>
+                        @enderror
                     </label>
+
                 </div>
+
 
                 <button class="button1" role="submit"> Say Hello! </button>
 
@@ -330,20 +387,58 @@
     </div>
 </div>
 
+@auth()
+<div class="table-responsive" id="messages">
+    <table class="table table-hover table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Total({{$inboxes->count()}})</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col" colspan="3">Message</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($inboxes as $inbox)
+        <tr>
+            <th scope="row"></th>
+            <td>{{$inbox->name}}</td>
+            <td>{{$inbox->email}}</td>
+            <td>{{$inbox->message}}</td>
+        </tr>
+        @endforeach
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+        {!! $inboxes->render() !!}
+    </div>
+
+</div>
+@endauth
+
 <footer>
-    <div class="container ">
-        <div class="row">
-            <div class="col-sm-3 d-flex justify-content-center">
-                <a style="color: ghostwhite" class="navbar-brand" href="#"><img src="{{asset('images/logo.png')}}" alt="logo" height="50"> TEYMEE
-                </a>
+    <div class="container1" >
+        <div class="row d-flex justify-content-between position-relative" >
+            <div class="col-sm-6 position-absolute" style="left:10%">
+                <div class="position-relative" >
+                    <a style="color: ghostwhite" class="navbar-brand" href="#">
+
+                        <img class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80" style="padding-bottom: 10%" >
+
+                        <span  class="teymee" style="position:absolute; left:5%; top:25%; font-size:20px;">
+                              <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span> </p>
+                           </span>
+                    </a>
+                </div>
+
             </div>
 
-{{--            <div class="col-sm-7 d-flex justify-content-center ">--}}
-{{--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,--}}
-{{--                    eaque eius esse et harum inventore ipsam  nam necessitatibus nemo pariatur provident.</p>--}}
-{{--            </div>--}}
+            {{--            <div class="col-sm-7 d-flex justify-content-center ">--}}
+            {{--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,--}}
+            {{--                    eaque eius esse et harum inventore ipsam  nam necessitatibus nemo pariatur provident.</p>--}}
+            {{--            </div>--}}
 
-            <div class="col-sm-2 d-flex justify-content-center">
+            <div class=" position-absolute copyright" >
                 <p>Copyright &copy;2020 </p>
             </div>
 
@@ -352,21 +447,12 @@
         </div>
     </div>
 
+
+
 </footer>
 
 
 
-
-{{--    <div class="progress" style="height: 100vh">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-md-6">--}}
-{{--                <img src="{{asset('images/logo.png')}}" alt="" height="200">--}}
-{{--            </div>--}}
-{{--            <div class="col-md-6">--}}
-{{--                <img src="{{asset('images/me2.svg')}}" alt="">--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
 
 
 <script src="/js/app.js"></script>
@@ -383,6 +469,7 @@
     });
 
 </script>
+
 <script>
     hljs.initHighlightingOnLoad();
 
@@ -392,109 +479,29 @@
         }, 1200);
     });
 </script>
+
+{{--SCROLLING EFFECT--}}
+<script>
+    jQuery($ => {
+        // The speed of the scroll in milliseconds
+        const speed = 1000;
+
+        $('a[href*="#"]')
+            .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+            .unbind('click.smoothScroll')
+            .bind('click.smoothScroll', event => {
+                const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    event.preventDefault();
+                    $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+                }
+            });
+    });
+</script>
+
 </body>
 
 
 </html>
-
-
-{{--<!DOCTYPE html>--}}
-{{--<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">--}}
-{{--    <head>--}}
-{{--        <meta charset="utf-8">--}}
-{{--        <meta name="viewport" content="width=device-width, initial-scale=1">--}}
-
-{{--        <title>Laravel</title>--}}
-
-{{--        <!-- Fonts -->--}}
-{{--        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">--}}
-
-{{--        <!-- Styles -->--}}
-{{--        <style>--}}
-{{--            html, body {--}}
-{{--                background-color: #fff;--}}
-{{--                color: #636b6f;--}}
-{{--                font-family: 'Nunito', sans-serif;--}}
-{{--                font-weight: 200;--}}
-{{--                height: 100vh;--}}
-{{--                margin: 0;--}}
-{{--            }--}}
-
-{{--            .full-height {--}}
-{{--                height: 100vh;--}}
-{{--            }--}}
-
-{{--            .flex-center {--}}
-{{--                align-items: center;--}}
-{{--                display: flex;--}}
-{{--                justify-content: center;--}}
-{{--            }--}}
-
-{{--            .position-ref {--}}
-{{--                position: relative;--}}
-{{--            }--}}
-
-{{--            .top-right {--}}
-{{--                position: absolute;--}}
-{{--                right: 10px;--}}
-{{--                top: 18px;--}}
-{{--            }--}}
-
-{{--            .content {--}}
-{{--                text-align: center;--}}
-{{--            }--}}
-
-{{--            .title {--}}
-{{--                font-size: 84px;--}}
-{{--            }--}}
-
-{{--            .links > a {--}}
-{{--                color: #636b6f;--}}
-{{--                padding: 0 25px;--}}
-{{--                font-size: 13px;--}}
-{{--                font-weight: 600;--}}
-{{--                letter-spacing: .1rem;--}}
-{{--                text-decoration: none;--}}
-{{--                text-transform: uppercase;--}}
-{{--            }--}}
-
-{{--            .m-b-md {--}}
-{{--                margin-bottom: 30px;--}}
-{{--            }--}}
-{{--        </style>--}}
-{{--    </head>--}}
-{{--    <body>--}}
-{{--        <div class="flex-center position-ref full-height">--}}
-{{--            @if (Route::has('login'))--}}
-{{--                <div class="top-right links">--}}
-{{--                    @auth--}}
-{{--                        <a href="{{ url('/home') }}">Home</a>--}}
-{{--                    @else--}}
-{{--                        <a href="{{ route('login') }}">Login</a>--}}
-
-{{--                        @if (Route::has('register'))--}}
-{{--                            <a href="{{ route('register') }}">Register</a>--}}
-{{--                        @endif--}}
-{{--                    @endauth--}}
-{{--                </div>--}}
-{{--            @endif--}}
-
-{{--            <div class="content">--}}
-{{--                <div class="title m-b-md">--}}
-{{--                    Laravel--}}
-{{--                </div>--}}
-
-{{--                <div class="links">--}}
-{{--                    <a href="https://laravel.com/docs">Docs</a>--}}
-{{--                    <a href="https://laracasts.com">Laracasts</a>--}}
-{{--                    <a href="https://laravel-news.com">News</a>--}}
-{{--                    <a href="https://blog.laravel.com">Blog</a>--}}
-{{--                    <a href="https://nova.laravel.com">Nova</a>--}}
-{{--                    <a href="https://forge.laravel.com">Forge</a>--}}
-{{--                    <a href="https://vapor.laravel.com">Vapor</a>--}}
-{{--                    <a href="https://github.com/laravel/laravel">GitHub</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </body>--}}
-{{--</html>--}}
