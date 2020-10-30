@@ -224,6 +224,23 @@ nav .navbar-nav li  a:hover{
     margin-top: 9%;
 }
 
+/*RECENT WORKS*/
+.recent-works{
+    margin-top: 10%;
+    color:ghostwhite;
+    text-align: center;
+}
+.recent-works p{
+    display: block !important;
+}
+.text-area{
+    padding-top: 15%;
+}
+.ovate{
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
+
 
 /*GET-IN-TOUCH*/
 .get-in-touch{

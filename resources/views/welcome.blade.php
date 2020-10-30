@@ -88,6 +88,9 @@
                                 <a class="nav-link" href="#aboutt">About</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
                             @auth()
@@ -327,9 +330,42 @@
     </div>
 </div>
 
+{{--RECENT WORKS--}}
+
+<div class="recent-works" id="portfolio">
+    <h2 class="d-flex justify-content-center"> <strong>RECENT WORKS</strong></h2>
+    <div class="container">
+        <div class="row ovate" data-aos="fade-left">
+            <div class="col-md-6 text-area  justify-content-center" >
+                <h5 class=" justify-content-center"> <strong>Ovate Agro</strong> </h5>
+
+                <div>
+                    <p>A growing Agricultural Company of  professionals passionate about food security & nature preservation in the world</p>
+                </div>
+
+            </div>
+            <div class="col-md-6 ">
+                <img src="images/ovate.png" alt="" class="img-fluid" >
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-right">
+            <div class="col-md-6">
+                <img src="images/chirlin2.png" alt="" width="100%" >
+            </div>
+            <div class="col-md-6 text-area  justify-content-center">
+                <h4><strong>Chirlin Collections</strong></h4>
+                <p>An Ecommerce website for an Interior Design Company</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
 {{--GET IN TOUCH--}}
 
-<div class="container  get-in-touch " id="contact" data-aos="zoom-in">
+<div class="container  get-in-touch" id="contact" data-aos="zoom-in">
 
     <div class="row d-flex justify-content-between " >
         <div class="col-md-6 ">
@@ -419,7 +455,7 @@
     @endif
 @endauth
 
-<footer>
+<footer >
     <div class="container1" >
         <div class="row d-flex justify-content-between position-relative" >
             <div class="col-sm-6 position-absolute" style="left:10%">
