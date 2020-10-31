@@ -56,6 +56,7 @@
                     <a href="https://twitter.com/_teymee?s=09" target="_blank"><i class="fab fa-twitter "></i></a>
                 </div>
             </div>
+
         </div>
         <div class="col-10">
             <div class="container">
@@ -93,6 +94,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
+
                             @auth()
                                 <li class="nav-item">
                                     <a class="nav-link" href="#messages">Messages</a>
@@ -121,6 +123,7 @@
 
                     </div>
                 </nav>
+
 
 
                 {{-- SHOWCASE--}}
@@ -164,6 +167,7 @@
 
     </div>
 </div>
+
 
 
 {{--BOXES--}}
@@ -489,6 +493,22 @@
 
 
 </footer>
+
+<div class="bubbles ">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+    <img src="images/bubble.png" alt="">
+</div>
 
 
 

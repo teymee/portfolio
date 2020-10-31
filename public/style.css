@@ -8,8 +8,164 @@ body{
     margin: 0;
     font-family: 'Mulish', sans-serif;
     background-color: #21212E;
-    overflow-x: hidden;
+    position: relative;
+
 }
+
+.bubbles img{
+    width: 50px;
+    opacity: 0;
+    animation: bubble linear 25s infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble {
+    100% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+    95% {
+        transform: translateY(-50vh);
+        opacity: 0.2;
+    }
+    90% {
+        transform: translateY(-100vh);
+        opacity: 0.2;
+    }
+    80% {
+        transform: translateY(-150vh);
+        opacity: 0.2;
+    }
+    70% {
+        transform: translateY(-200vh);
+        opacity: 0.2;
+    }
+    60% {
+        transform: translateY(-250vh);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-300vh);
+        opacity: 0.3;
+    }
+    40% {
+        transform: translateY(-350vh);
+        opacity: 0.3;
+    }
+    30% {
+        transform: translateY(-400vh);
+        opacity: 0.3;
+    }
+    25% {
+    transform: translateY(-500vh);
+    opacity: 0.3;
+}
+    20% {
+        transform: translateY(-550vh);
+        opacity: 0.3;
+    }
+    10% {
+        transform: translateY(-600vh);
+        opacity: 0.3;
+    }
+    0% {
+        transform: translateY(-650vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 4s;
+    width: 30px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 11s;
+    width: 10px;
+
+}
+.bubbles img:nth-child(4){
+
+    animation-delay: 6s;
+    width: 40px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 10s;
+    width: 60px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7.5s;
+    width: 20px;
+}
+.bubbles img:nth-child(8){
+    animation-delay: 2.7s;
+    width: 15px;
+}
+.bubbles img:nth-child(9){
+    animation-delay: 3.7s;
+    width: 25px;
+}
+.bubbles img:nth-child(10){
+    animation-delay: 0.3s;
+    width: 40px;
+}
+.bubbles img:nth-child(11){
+    animation-delay: 8s;
+    width: 5px;
+}
+.bubbles img:nth-child(12){
+    animation-delay: 9.2ms;
+    width: 50px;
+}
+.bubbles img:nth-child(13){
+    animation-delay: 13s;
+    width: 30px;
+}
+
+
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*0%{*/
+    /*    transform: translateY(0) ;*/
+    /*    opacity: 0;*/
+    /*}*/
+
+
 .table-dark{
     background: #BD11FA;
     background: linear-gradient(169deg, rgba(2,0,36,1) 0%, rgba(216,17,250,0.5130427170868348) 40%, rgba(0,212,255,1) 100%);
@@ -333,7 +489,7 @@ footer{
 }
 
 
-
+/*IPAD*/
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
@@ -369,7 +525,9 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
             color:#BD11FA !important;
         }
 
-
+    .showcase h1 {
+        font-size: 19px;
+    }
         /*BOXES*/
         .boxes{
             margin-top: 15%;
@@ -420,7 +578,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 
 
 
-
+/*PHONE*/
 
 @media screen and (max-width:700px) {
 
