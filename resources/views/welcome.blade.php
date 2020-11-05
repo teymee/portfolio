@@ -176,7 +176,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
-                    <h2><strong>We've partnered with awesome folks</strong></h2>
+                    <h2><strong>I've partnered with awesome organisations</strong></h2>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
@@ -258,13 +258,51 @@
                         <div class="d-flex flex-column">
                             <p>HTML/CSS</p>
                         </div>
-                        <div class="d-flex flex-column">
-                            <p>95%</p>
-                        </div>
+{{--                        <div class="d-flex flex-column">--}}
+{{--                            <p>95%</p>--}}
+{{--                        </div>--}}
                     </div>
                     <div class="progress" style="height: 3px;">
 
-                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                             aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bar-section">
+                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                        <div class="d-flex flex-column">
+                            <p>Javascript</p>
+                        </div>
+                        {{--                        <div class="d-flex flex-column">--}}
+                        {{--                            <p>95%</p>--}}
+                        {{--                        </div>--}}
+                    </div>
+                    <div class="progress" style="height: 3px;">
+
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                             aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bar-section">
+                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                        <div class="d-flex flex-column">
+                            <p>Reactjs</p>
+                        </div>
+                        {{--                        <div class="d-flex flex-column">--}}
+                        {{--                            <p>25%</p>--}}
+                        {{--                        </div>--}}
+                    </div>
+                    <div class="progress" style="height: 3px;">
+
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
                              aria-valuemin="0" aria-valuemax="100">
 
                         </div>
@@ -277,13 +315,10 @@
                         <div class="d-flex flex-column">
                             <p>PHP</p>
                         </div>
-                        <div class="d-flex flex-column">
-                            <p>75%</p>
-                        </div>
                     </div>
                     <div class="progress" style="height: 3px;">
 
-                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
                              aria-valuemin="0" aria-valuemax="100">
 
                         </div>
@@ -295,37 +330,18 @@
                         <div class="d-flex flex-column">
                             <p>Laravel</p>
                         </div>
-                        <div class="d-flex flex-column">
-                            <p>80%</p>
-                        </div>
+
                     </div>
                     <div class="progress" style="height: 3px;">
 
-                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
                              aria-valuemin="0" aria-valuemax="100">
 
                         </div>
 
                     </div>
                 </div>
-                <div class="bar-section">
-                    <div class="d-flex flex-row flex-wrap justify-content-between">
-                        <div class="d-flex flex-column">
-                            <p>Reactjs</p>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <p>25%</p>
-                        </div>
-                    </div>
-                    <div class="progress" style="height: 3px;">
 
-                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                             aria-valuemin="0" aria-valuemax="100">
-
-                        </div>
-
-                    </div>
-                </div>
 
             </div>
 
