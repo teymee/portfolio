@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Affordable web design">
+    <meta name="description" content="Teymee's Portfolio">
     <meta name="keyword" content="web design">
 
     <link
@@ -65,9 +65,9 @@
                 {{-- NAVBAR--}}
                 <nav  data-aos="fade-down" class="navbar fixed-top navbar-expand-lg navbar-dark ">
                     <a class="navbar-brand position-relative" href="#" >
-                        <img  class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80">
+{{--                        <img  class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80">--}}
 
-                           <span class="teymee" style="position:absolute; left:50%; top:35%; font-size:20px;">
+                           <span class="teymee" style=" padding-left:50px; position:absolute; left:50%; top:35%; font-size:20px;">
                               <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span></p>
                            </span>
                        </a>
@@ -176,7 +176,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
-                    <h2><strong>I've partnered with awesome organisations</strong></h2>
+                    <h2><strong>I have partnered with notable and prominent organisations</strong></h2>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
@@ -482,9 +482,9 @@
                 <div class="position-relative" >
                     <a style="color: ghostwhite" class="navbar-brand" href="#">
 
-                        <img class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80" style="padding-bottom: 10%" >
+{{--                        <img class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80" style="padding-bottom: 10%" >--}}
 
-                        <span  class="teymee" style="position:absolute; left:5%; top:25%; font-size:20px;">
+                        <span  class="teymee" style="padding-left:50px;position:absolute; left:5%; top:25%; font-size:20px;">
                               <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span> </p>
                            </span>
                     </a>
