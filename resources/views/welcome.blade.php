@@ -139,7 +139,7 @@
 
 
                         </div>
-                        <div class="col-md-6 " data-aos="fade-left">
+                        <div class="col-md-6 "  >
                             <img class="img-fluid" src="{{asset('images/me1 (2).svg')}}" alt="logo">
                         </div>
                     </div>
@@ -163,7 +163,7 @@
 <div class="d-flex flex-row justify-content-start" style="margin-top: 10%;"   data-aos="fade-up">
     <div class="d-flex flex-column">
 
-        <img src="{{asset('images/logo.png')}}" alt="" class="img-fluid" height="100" width="50">
+        <img src="{{asset('images/logo.png')}}" alt="" class="img-fluid " height="100" width="50">
 
     </div>
 </div>
@@ -176,7 +176,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
-                    <h2><strong>I have partnered with notable and prominent organisations</strong></h2>
+                    <h2><strong>I have partnered with prominent organisations</strong></h2>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
@@ -378,6 +378,24 @@
                 <p>An Ecommerce website for an Interior Design Company</p>
             </div>
 
+        </div>
+
+        <div class="row ovate" data-aos="fade-left">
+
+            <div class="col-md-6 text-area  justify-content-center" >
+                <h5 class=" justify-content-center"> <a href="https://nuelflix.000webhostapp.com/" target="_blank"><strong>Nuelflix</strong></a></h5>
+
+                <div>
+                    <p><a href="https://nuelflix.000webhostapp.com/" target="_blank">A parody of Netflix website  </a></p>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 ">
+                <a href="https://nuelflix.000webhostapp.com/" target="_blank">
+                <img src="images/nuelflixx.png" alt="" class="img-fluid" >
+                </a>
+            </div>
         </div>
     </div>
 
