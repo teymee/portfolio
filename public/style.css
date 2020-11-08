@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Henny+Penny&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+
 body{
     padding: 0;
     margin: 0;
@@ -137,34 +139,6 @@ body{
 }
 
 
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
-    /*0%{*/
-    /*    transform: translateY(0) ;*/
-    /*    opacity: 0;*/
-    /*}*/
 
 
 .table-dark{
@@ -191,15 +165,11 @@ hr{
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    /*position: absolute;*/
-    /*bottom:50%;*/
     height:2px;
-    /*border-width:0;*/
     background: #BD11FA;
     background: linear-gradient(169deg, rgba(2,0,36,1) 0%, rgba(216,17,250,0.5130427170868348) 40%, rgba(0,212,255,1) 100%);
-    width:90%;
+    /*width:90%;*/
     text-align:right;
-    /*margin: 0 0 0 auto;*/
 }
 
 .button{
@@ -214,15 +184,15 @@ hr{
 .button1{
     padding: 11px 35px;
     border-radius: 5px;
-    border:#707070 1px solid;
+    border:none;
     background: rgb(2,0,36);
     background: linear-gradient(169deg, rgba(2,0,36,1) 0%, rgba(216,17,250,0.5130427170868348) 40%, rgba(0,212,255,1) 100%);
 
     color: ghostwhite;
     font-size: 12px;
-    -webkit-box-shadow: 0px -2px 15px 5px rgba(130,46,255,1);
-    -moz-box-shadow: 0px -2px 15px 5px rgba(130,46,255,1);
-    box-shadow: 0px -2px 15px 5px rgba(130,46,255,1);
+    /*-webkit-box-shadow: 0px -2px 15px 5px rgba(130,46,255,1);*/
+    /*-moz-box-shadow: 0px -2px 15px 5px rgba(130,46,255,1);*/
+    /*box-shadow: -2px -2px -10px 1px rgba(130,46,255,1);*/
     transition: 3s;
 }
 
@@ -234,7 +204,7 @@ hr{
 
                     /*NAVBAR*/
 #header{
-height: auto;
+    height: auto;
     overflow: hidden;
     background-color: #21212E;
     position: relative;
@@ -376,7 +346,6 @@ nav .navbar-nav li  a:hover{
 .progress-bar{
     background: rgb(250,17,213);
     background: linear-gradient(304deg, rgba(250,17,213,0.8015581232492998) 40%, rgba(0,212,255,1) 100%);
-    /*background-color:#BD11FA ;*/
 }
 .bar-section{
     margin-top: 9%;
@@ -431,13 +400,7 @@ nav .navbar-nav li  a:hover{
     width: 250px;
     color:white;
 }
-/*input{*/
-/*    position:absolute;*/
-/*    top:20px;*/
-/*    width: 100%;*/
-/*    padding: 0 20px;*/
 
-/*}*/
 .get-in-touch input ~ span{
     transition:top .7s ease;
     position:absolute;
@@ -494,10 +457,10 @@ footer{
     padding: 20px;
 }
 
-.copyright{
-    left:80%;
-    padding-top:2%
-}
+/*.copyright{*/
+/*    left:80%;*/
+/*    padding-top:2%*/
+/*}*/
 
 
 /*IPAD*/
@@ -594,6 +557,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 @media screen and (max-width:700px) {
 
 
+
     /*NAVBAR*/
     nav{
         width: 80%;
@@ -634,10 +598,10 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     }
 
 
-    .about-text h6{
+    #portfolio h5, .about-text h6{
         font-size: 15px;
     }
-    #services p, .showcase p, .about-text p{
+    #portfolio p, #services p, .showcase p, .about-text p{
         font-size: 10px;
         margin-bottom: 20px;
     }
@@ -663,14 +627,14 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         box-shadow: 0px -2px 15px 5px rgba(0,0,0,1);
     }
 
-    #services h2, .about-text h4 {
+    #portfolio h2, #services h2, .about-text h4 {
         font-size: 17px;
     }
     .second{
         display:none;
     }
     .bottom{
-        padding-left: 2%;
+        padding-left: 0%;
         padding-top: 5%;
         color: grey;
     }
@@ -708,14 +672,18 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         color:white;
     }
 
-    .copyright{
-        right: 100px;
-        font-size:13px;
-    }
+    /*.copyright{*/
+    /*    right: 100px;*/
+    /*    font-size:13px;*/
+    /*}*/
 
-    .teymee-image{
-        height:70px;
-    }
+    /*.teymee{*/
+    /*    padding-left:50px;*/
+    /*    position:absolute;*/
+    /*    left:5%;*/
+    /*    top:25%;*/
+    /*    font-size:20px;"*/
+    /*}*/
     .teymee p{
         font-size: 13px;
     }
@@ -742,7 +710,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 
         color: ghostwhite;
         font-size: 12px;
-        -webkit-box-shadow: 0px -2px 15px 5px rgba(130,46,255,1);
+        box-shadow: 0px 0px 0px 0px rgba(130,46,255,1);
         -moz-box-shadow: 0px 0px 0px 0px rgba(130,46,255,1);
         box-shadow: 0px 0px 0px 0px rgba(130,46,255,1);
         transition: 3s;
@@ -754,11 +722,17 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         background-color: #BD11FA;
     }
 
-    .imgs{
-        height:80px;
-        width:80px;
-    }
+    .imgs {
+        height: 80px;
+        width: 80px;
 
+
+    }
+    footer{
+        text-align: center;
+    }
 }
+
+
 
 

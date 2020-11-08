@@ -51,7 +51,7 @@
             <div class="sidebar position-fixed">
                 <div class="socials ">
                     <a href="https://github.com/teymee" target="_blank"><i class="fab fa-github "></i></a>
-{{--                    <a href=""><i class="fab fa-facebook-f "></i></a>--}}
+
                     <a href=""><i class="fab fa-instagram " target="_blank"></i></a>
                     <a href="https://twitter.com/_teymee?s=09" target="_blank"><i class="fab fa-twitter "></i></a>
                 </div>
@@ -130,16 +130,10 @@
                 <div class="showcase " >
                     <div class="row">
                         <div class="col-md-6 " data-aos="zoom-in">
-{{--                            <div class=" table1 position-relative">--}}
-{{--                                <h1> <strong>Hi</strong> </h1> <hr>--}}
-
-{{--                            </div>--}}
                             <h1 class="heading"> <strong>LET'S BUILD SOMETHING <br>
                                     <span id="typed"></span></strong> </h1>
-
-
                         </div>
-                        <div class="col-md-6 "  >
+                        <div class="col-md-6 " data-aos="fade-right" >
                             <img class="img-fluid" src="{{asset('images/me1 (2).svg')}}" alt="logo">
                         </div>
                     </div>
@@ -150,8 +144,8 @@
     <br> <br> <br>
 
     <div class="d-flex justify-content-center">
-        <span style="color: #BD11FA" class="hero__scroll animate__animated animate__fadeInUp animate__infinite  animate__slower" data-aos="fade-up"   data-aos-once="true" data-aos-easing="ease" data-aos-delay="800">
-{{--				<i class="fas fa-caret-down fa-3x " ></i>--}}
+        <span style="color: #BD11FA" class="hero__scroll animate__animated animate__fadeInUp animate__infinite  animate__slower"
+              data-aos="fade-up"   data-aos-once="true" data-aos-easing="ease" data-aos-delay="800">
             <i class="fas fa-angle-down fa-3x"></i>
 			</span>
 
@@ -495,28 +489,23 @@
 
 <footer >
     <div class="container1" >
-        <div class="row d-flex justify-content-between position-relative" >
-            <div class="col-sm-6 position-absolute" style="left:10%">
-                <div class="position-relative" >
+        <div class="row text-center" >
+
+                <div class=" col-12" >
                     <a style="color: ghostwhite" class="navbar-brand" href="#">
 
-{{--                        <img class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80" style="padding-bottom: 10%" >--}}
 
-                        <span  class="teymee" style="padding-left:50px;position:absolute; left:5%; top:25%; font-size:20px;">
+                        <span  class="teymee" >
                               <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span> </p>
                            </span>
                     </a>
-                </div>
+
 
             </div>
 
-            {{--            <div class="col-sm-7 d-flex justify-content-center ">--}}
-            {{--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,--}}
-            {{--                    eaque eius esse et harum inventore ipsam  nam necessitatibus nemo pariatur provident.</p>--}}
-            {{--            </div>--}}
 
-            <div class=" position-absolute copyright" >
-                <p>Copyright &copy;2020 </p>
+            <div class=" copyright col-12" style="font-size: 15" >
+                <p> <strong>Teymee17@gmail.com</strong> </p>
             </div>
 
 
