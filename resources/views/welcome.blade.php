@@ -29,9 +29,9 @@
 
 </head>
 
-<body>
+<body style="overflow-x:hidden !important;">
 
-<header id="header">
+<header id="header" style="overflow-x:hidden !important;">
 
     @if(session()->has('session_message'))
         <div class="d-flex justify-content-center" data-aos="fade-in">

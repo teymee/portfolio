@@ -662,7 +662,9 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 
 @media screen and (max-width:700px) {
 
-
+    #header{
+        overflow-x:hidden !important;
+    }
     body{
         position: relative !important;
         overflow-x:hidden !important;
@@ -677,6 +679,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     .showcase{
         margin-top: 12%;
         max-width: 100% !important;
+        overflow-x:hidden !important;
     }
     .showcase h1 {
         font-size: 19px;
@@ -701,6 +704,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     .boxes{
         margin-top: 15%;
         max-width: 100% !important;
+        overflow-x:hidden !important;
     }
 
     .box{
@@ -864,7 +868,8 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     .toggle-button{
         display: inline-block !important;
         position: fixed;
-        right: 50px;
+        right: 150px;
+        overflow: hidden;
     }
 
     .nav-item1{
