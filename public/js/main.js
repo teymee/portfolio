@@ -33,9 +33,10 @@ $(document).ready(function(e) {
     $navList = $('#nav-list');
     $toggleButton = $('#toggle-button');
     $toggleBar = $('#toggle-bar');
-
+    $navitem1 = $('.nav-list1');
     $toggleButton.click(function (e) {
         $navList.toggleClass("nav-list-gone")
+        $navitem1.toggleClass("nav-list-gone")
         $toggleBar.toggleClass("fa-times")
     });
 });

@@ -6,37 +6,39 @@
 
 
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Mulish', sans-serif;
-    background-color: #21212E;
-    position: relative;
-    overflow-x:hidden;
-    width:100%;
-    max-width:100%;
-    min-width:100%;
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Mulish', sans-serif;
+        background-color: #21212E;
+        position: relative;
+        overflow-x:hidden;
+        width:100%;
+        max-width:100%;
+        min-width:100%;
 
-}
+    }
 
 .nav-bar{
     position: relative;
     margin-top: 20px;
     transition: .5s ease;
 }
+
 .nav-item1{
     display: inline-block;
 }
 
 
 .logo{
-    position: absolute;
+    position: fixed;
     left:100px;
 
 }
 
 .nav-list {
-    position: absolute;
+
+    position: fixed;
     right:100px;
 
 
@@ -522,32 +524,81 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
            height: auto;
         }
 
-        .navbar {
-            margin-top: 10px;
-        }
-        .navbar .navbar-nav  {
-
-            background-color: #BD11FA;
-            color: #1d2c43;
-        }
-        .navbar .navbar-nav > li >a{
 
 
-            text-align: center;
-            padding-top: 20px !important;
+    /*NAVBAR*/
 
-        }
-        .navbar .navbar-nav > li >a {
-            color:ghostwhite !important;
-        }
 
-        .navbar .navbar-nav > li:last-child{
-            padding-bottom: 20px !important;
-        }
+    .nav-list{
 
-        .navbar .navbar-nav > li > a:hover {
-            color:#BD11FA !important;
-        }
+        position: fixed;
+        right: -200px !important;
+        top: 0;
+        width: 250px;
+        height: 200vh;
+        background-color: #21212E !important;
+        padding-top: 150px !important;
+        /*transition: width 600ms ease;*/
+        transition:  600ms ease !important;
+    }
+
+    .nav-list-gone{
+        right: 0px !important;
+
+    }
+
+    .toggle-button{
+        display: inline-block !important;
+        position: fixed;
+        right: 50px;
+    }
+
+    .nav-item1{
+        display:block;
+        /*text-align: center;*/
+        padding-top: 20px !important;
+    }
+
+    .logo{
+        position: fixed;
+        left:50px;
+
+    }
+
+        /*.navbar {*/
+        /*    margin-top: 10px;*/
+        /*}*/
+        /*.navbar .navbar-nav  {*/
+
+        /*    background-color: #BD11FA;*/
+        /*    color: #1d2c43;*/
+        /*}*/
+        /*.navbar .navbar-nav > li >a{*/
+
+
+        /*    text-align: center;*/
+        /*    padding-top: 20px !important;*/
+
+        /*}*/
+        /*.navbar .navbar-nav > li >a {*/
+        /*    color:ghostwhite !important;*/
+        /*}*/
+
+        /*.navbar .navbar-nav > li:last-child{*/
+        /*    padding-bottom: 20px !important;*/
+        /*}*/
+
+        /*.navbar .navbar-nav > li > a:hover {*/
+        /*    color:#BD11FA !important;*/
+        /*}*/
+    #portfolio h5, .about-text h6{
+        font-size: 15px;
+    }
+    #portfolio p, .showcase p, .about-text p{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
 
     .showcase h1 {
         font-size: 19px;
@@ -596,6 +647,11 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
             width:150px;
             color:white;
         }
+
+        /*.bars{*/
+        /*    width: 100%;*/
+        /*    padding: 1000px;*/
+        /*}*/
     }
 
 
@@ -807,6 +863,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 
     .toggle-button{
         display: inline-block !important;
+        position: fixed;
         right: 50px;
     }
 
@@ -816,12 +873,15 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         padding-top: 20px !important;
         }
 
-
     .logo{
-        position: absolute;
+        position: fixed;
         left:50px;
 
     }
+
+
+
+
         /*nav{*/
     /*    width: 80%;*/
 

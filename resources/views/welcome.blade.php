@@ -44,61 +44,64 @@
 
 
                                                 {{-- NAV-BAR--}}
-        <div class="nav-bar fixed-top">
-            <div class="logo">
+        <div class= "nav-bar fixed-top">
+            <div class="fixed">
+                <div class="logo">
 
-                <a class="navbar-brand " href="#" >
+                    <a class="navbar-brand " href="#" >
             <span class="teymee" style="">
                               <p style="font-family: 'Pacifico', cursive; color: ghostwhite"> TEY<span style="color: #BD11FA; ">MEE</span></p>
                            </span>
-                </a>
-            </div>
-            <button class="toggle-button" id="toggle-button" ><span id="toggle-bar" class="fas fa-bars fa-2x"></span></button>
-            <div class="nav-list" id="nav-list">
-                <ul class="">
+                    </a>
+                </div>
+                <button class="toggle-button" id="toggle-button" ><span id="toggle-bar" class="fas fa-bars fa-2x"></span></button>
+                <div class="nav-list" id="nav-list">
+                    <ul class="">
 
-                    <li class="nav-item1 " >
-                        <a class="nav-link" href="#header" style="color: ghostwhite">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#aboutt">About</a>
-                    </li>
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                    @auth()
-                        <li class="nav-item">
-                            <a class="nav-link" href="#messages">Messages</a>
+                        <li class="nav-item1 " >
+                            <a class="nav-link" href="#header" style="color: ghostwhite">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link" href="#aboutt">About</a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
 
-                        <li class="nav-item dropdown" style="list-style: none;">
-                            <a  style="color: ghostwhite" class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Welcome  {{ucwords(strtolower(auth()->user()->name))}}</a>
+                        @auth()
+                            <li class="nav-item">
+                                <a class="nav-link" href="#messages">Messages</a>
+                            </li>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdown04" >
-                                <form action="/logout" method="post" >
-                                    @csrf
-                                    @method('POST')
-                                    <div class="container">
-                                        <button  role="submit" style=" cursor:pointer; border: none; background-color: transparent; color: black; text-align: center; font-size: 13px">
-                                            <span class="menu-title">Logout</span>
-                                        </button>
-                                    </div>
-                                </form>
+                            <li class="nav-item dropdown" style="list-style: none;">
+                                <a  style="color: ghostwhite" class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Welcome  {{ucwords(strtolower(auth()->user()->name))}}</a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdown04" >
+                                    <form action="/logout" method="post" >
+                                        @csrf
+                                        @method('POST')
+                                        <div class="container">
+                                            <button  role="submit" style=" cursor:pointer; border: none; background-color: transparent; color: black; text-align: center; font-size: 13px">
+                                                <span class="menu-title">Logout</span>
+                                            </button>
+                                        </div>
+                                    </form>
 
 
-                            </div>
-                        </li>
-                    @endauth
-                </ul>
+                                </div>
+                            </li>
+                        @endauth
+                    </ul>
+                </div>
             </div>
+
         </div>
 
 
