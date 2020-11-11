@@ -5,14 +5,64 @@
 
 
 
+
 body{
     padding: 0;
     margin: 0;
     font-family: 'Mulish', sans-serif;
     background-color: #21212E;
     position: relative;
+    overflow-x:hidden;
+    width:100%;
+    max-width:100%;
+    min-width:100%;
 
 }
+
+.nav-bar{
+    position: relative;
+    margin-top: 20px;
+    transition: .5s ease;
+}
+.nav-item1{
+    display: inline-block;
+}
+
+
+.logo{
+    position: absolute;
+    left:100px;
+
+}
+
+.nav-list {
+    position: absolute;
+    right:100px;
+
+
+}
+
+.nav-link{
+    color: grey;
+    font-size: 13px;
+}
+#active{
+    color: ghostwhite !important;
+}
+.nav-link:hover{
+    color: ghostwhite;
+}
+
+.toggle-button{
+    background-color: transparent;
+    border: none;
+    color: grey;
+    position: absolute;
+    z-index: 9;
+    right: 10px;
+    display: none;
+}
+
 
 
 .bubbles img{
@@ -557,41 +607,20 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 @media screen and (max-width:700px) {
 
 
-
-    /*NAVBAR*/
-    nav{
-        width: 80%;
-    }
-    .navbar {
-       margin-top: 10px;
-    }
-    .navbar .navbar-nav  {
-
-        background-color: #BD11FA;
-        color: #1d2c43;
-    }
-    .navbar .navbar-nav > li >a{
-
-
-        text-align: center;
-        padding-top: 20px !important;
+    body{
+        position: relative !important;
+        overflow-x:hidden !important;
+        width:100% !important;
+        max-width:100% !important;
+        min-width:100% !important;
 
     }
-    .navbar .navbar-nav > li >a {
-        color:ghostwhite !important;
-    }
 
-    .navbar .navbar-nav > li:last-child{
-        padding-bottom: 20px !important;
-    }
-
-    .navbar .navbar-nav > li > a:hover {
-        color:#BD11FA !important;
-    }
 
     /*SHOWCASE*/
     .showcase{
         margin-top: 12%;
+        max-width: 100% !important;
     }
     .showcase h1 {
         font-size: 19px;
@@ -615,6 +644,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     /*BOXES*/
     .boxes{
         margin-top: 15%;
+        max-width: 100% !important;
     }
 
     .box{
@@ -634,7 +664,6 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         display:none;
     }
     .bottom{
-        padding-left: 0%;
         padding-top: 5%;
         color: grey;
         padding-left: 5%;
@@ -733,6 +762,101 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     footer{
         text-align: center;
     }
+
+
+    /*SIDEBAR*/
+    .navbar-nav{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 120vh;
+        background-color: #21212E !important;
+        padding-top: 150px !important;
+        /*transition: width 600ms ease;*/
+        transition:  600ms ease !important;
+    }
+
+
+
+
+/*.navbar-collapse{*/
+/*    transition: width 600ms ease;*/
+/*}*/
+
+    /*NAVBAR*/
+
+
+    .nav-list{
+
+        position: fixed;
+        right: -200px !important;
+        top: 0;
+        width: 250px;
+        height: 200vh;
+        background-color: #21212E !important;
+        padding-top: 150px !important;
+        /*transition: width 600ms ease;*/
+        transition:  600ms ease !important;
+    }
+
+    .nav-list-gone{
+        right: 0px !important;
+
+    }
+
+    .toggle-button{
+        display: inline-block !important;
+        right: 50px;
+    }
+
+    .nav-item1{
+        display:block;
+        /*text-align: center;*/
+        padding-top: 20px !important;
+        }
+
+
+    .logo{
+        position: absolute;
+        left:50px;
+
+    }
+        /*nav{*/
+    /*    width: 80%;*/
+
+    /*}*/
+    /*.navbar {*/
+    /*    margin-top: 10px;*/
+    /*    !*transition: width 600ms ease;*!*/
+    /*}*/
+    /*.navbar .navbar-nav  {*/
+
+    /*    background-color: #BD11FA;*/
+    /*    color: #1d2c43;*/
+    /*}*/
+    /*.navbar .navbar-nav > li >a{*/
+
+
+    /*    text-align: center;*/
+    /*    padding-top: 20px !important;*/
+
+    /*}*/
+    /*.navbar .navbar-nav > li >a {*/
+    /*    color:ghostwhite !important;*/
+    /*}*/
+
+    /*.navbar .navbar-nav > li{*/
+
+    /*    padding-bottom: 20px !important;*/
+    /*}*/
+    /*.navbar .navbar-nav > li:last-child{*/
+    /*    padding-bottom: 20px !important;*/
+    /*}*/
+
+    /*.navbar .navbar-nav > li > a:hover {*/
+    /*    color:#BD11FA !important;*/
+    /*}*/
 }
 
 

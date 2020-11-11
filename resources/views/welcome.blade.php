@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Teymee's Portfolio">
     <meta name="keyword" content="web design">
@@ -42,10 +43,68 @@
     @endif
 
 
+                                                {{-- NAV-BAR--}}
+        <div class="nav-bar fixed-top">
+            <div class="logo">
+
+                <a class="navbar-brand " href="#" >
+            <span class="teymee" style="">
+                              <p style="font-family: 'Pacifico', cursive; color: ghostwhite"> TEY<span style="color: #BD11FA; ">MEE</span></p>
+                           </span>
+                </a>
+            </div>
+            <button class="toggle-button" id="toggle-button" ><span id="toggle-bar" class="fas fa-bars fa-2x"></span></button>
+            <div class="nav-list" id="nav-list">
+                <ul class="">
+
+                    <li class="nav-item1 " >
+                        <a class="nav-link" href="#header" style="color: ghostwhite">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#aboutt">About</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    @auth()
+                        <li class="nav-item">
+                            <a class="nav-link" href="#messages">Messages</a>
+                        </li>
+
+                        <li class="nav-item dropdown" style="list-style: none;">
+                            <a  style="color: ghostwhite" class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Welcome  {{ucwords(strtolower(auth()->user()->name))}}</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdown04" >
+                                <form action="/logout" method="post" >
+                                    @csrf
+                                    @method('POST')
+                                    <div class="container">
+                                        <button  role="submit" style=" cursor:pointer; border: none; background-color: transparent; color: black; text-align: center; font-size: 13px">
+                                            <span class="menu-title">Logout</span>
+                                        </button>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </li>
+                    @endauth
+                </ul>
+            </div>
+        </div>
+
 
     <div class="row">
 
-        {{--SOCIALS--}}
+{{--        SOCIALS--}}
         <div class="col-1 position-relative">
 
             <div class="sidebar position-fixed">
@@ -62,71 +121,74 @@
             <div class="container">
 
 
-                {{-- NAVBAR--}}
-                <nav  data-aos="fade-down" class="navbar fixed-top navbar-expand-lg navbar-dark ">
-                    <a class="navbar-brand position-relative" href="#" >
+
+
+
+{{--                 NAVBAR--}}
+{{--                <nav  data-aos="fade-down" class="navbar fixed-top navbar-expand-lg navbar-dark ">--}}
+{{--                    <a class="navbar-brand position-relative" href="#" >--}}
 {{--                        <img  class="teymee-image" src="{{asset('images/logo.png')}}" alt="logo" height="80">--}}
 
-                           <span class="teymee" style=" padding-left:50px; position:absolute; left:50%; top:35%; font-size:20px;">
-                              <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span></p>
-                           </span>
-                       </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+{{--                           <span class="teymee" style=" padding-left:50px; position:absolute; left:50%; top:35%; font-size:20px;">--}}
+{{--                              <p style="font-family: 'Pacifico', cursive;"> TEY<span style="color: #BD11FA; ">MEE</span></p>--}}
+{{--                           </span>--}}
+{{--                       </a>--}}
+{{--                    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse"--}}
+{{--                            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent"--}}
+{{--                            aria-expanded="false" aria-label="Toggle navigation" style="z-index: 9999">--}}
+{{--                        <span class="navbar-toggler-icon"></span>--}}
+{{--                    </button>--}}
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto ">
-                            <li class=" {{request()->is('/') || request()->is('#header') ? "nav-item active" :" "}}">
-                                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#aboutt">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
+{{--                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">--}}
+{{--                        <ul class="navbar-nav ml-auto ">--}}
+{{--                            <li class=" {{request()->is('/') || request()->is('#header') ? "nav-item active" :" "}}">--}}
+{{--                                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="#services">Services</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="#aboutt">About</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="#portfolio">Portfolio</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link" href="#contact">Contact</a>--}}
+{{--                            </li>--}}
 
-                            @auth()
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#messages">Messages</a>
-                                </li>
+{{--                            @auth()--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="#messages">Messages</a>--}}
+{{--                                </li>--}}
 
-                                <li class="nav-item dropdown" style="list-style: none;">
-                                    <a  style="color: ghostwhite" class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Welcome  {{ucwords(strtolower(auth()->user()->name))}}</a>
+{{--                                <li class="nav-item dropdown" style="list-style: none;">--}}
+{{--                                    <a  style="color: ghostwhite" class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"--}}
+{{--                                        aria-haspopup="true" aria-expanded="false">Welcome  {{ucwords(strtolower(auth()->user()->name))}}</a>--}}
 
-                                    <div class="dropdown-menu" aria-labelledby="dropdown04" >
-                                        <form action="/logout" method="post" >
-                                            @csrf
-                                            @method('POST')
-                                            <div class="container">
-                                                <button  role="submit" style=" cursor:pointer; border: none; background-color: transparent; color: black; text-align: center; font-size: 13px">
-                                                    <span class="menu-title">Logout</span>
-                                                </button>
-                                            </div>
-                                        </form>
-
-
-                                    </div>
-                                </li>
-                            @endauth
-                        </ul>
-
-                    </div>
-                </nav>
+{{--                                    <div class="dropdown-menu" aria-labelledby="dropdown04" >--}}
+{{--                                        <form action="/logout" method="post" >--}}
+{{--                                            @csrf--}}
+{{--                                            @method('POST')--}}
+{{--                                            <div class="container">--}}
+{{--                                                <button  role="submit" style=" cursor:pointer; border: none; background-color: transparent; color: black; text-align: center; font-size: 13px">--}}
+{{--                                                    <span class="menu-title">Logout</span>--}}
+{{--                                                </button>--}}
+{{--                                            </div>--}}
+{{--                                        </form>--}}
 
 
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                            @endauth--}}
+{{--                        </ul>--}}
 
-                {{-- SHOWCASE--}}
+{{--                    </div>--}}
+{{--                </nav>--}}
+
+
+
+{{--                 SHOWCASE--}}
                 <div class="showcase " >
                     <div class="row">
                         <div class="col-md-6 " data-aos="zoom-in">
@@ -165,17 +227,17 @@
 
 
 {{--BOXES--}}
-<div id="services">
+<div id="services"  style="overflow: hidden">
     <div id="about" class="experiment animated "  >
         <div class="container">
-            <div class="row ">
+            <div class="row " >
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
                     <h2><strong>I have partnered with prominent organisations</strong></h2>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
                     <button class="button1">All Features</button>
-                    {{--                    <img class="img-fluid" src="{{asset('images/about.svg')}}" alt="logo" >--}}
+
                 </div>
 
                 <div class="col-xl-7 pl-5 boxes" data-aos="flip-left"
@@ -204,7 +266,7 @@
                             <p>Make your website fast, easy to find, and reach the widest audience possible.</p>
                         </div>
                     </div>
-                    <div class="box third ">
+                    <div class="box third " style="margin-bottom: 5px">
                         <div class="upper"></div>
                         <div class="middle">
                             <i class="fas fa-laptop fa-2x"></i>
@@ -368,7 +430,7 @@
                 <img src="images/chirlin2.png" alt="" width="100%" >
             </div>
             <div class="col-md-6 text-area  justify-content-center">
-                <h4><strong>Chirlin Collections</strong></h4>
+                <h5><strong>Chirlin Collections</strong></h5>
                 <p>An Ecommerce website for an Interior Design Company</p>
             </div>
 

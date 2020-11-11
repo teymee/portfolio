@@ -1,28 +1,43 @@
-var typed_2 = new Typed('#typed_2',{
-    strings:[
+var typed_2 = new Typed('#typed_2', {
+    strings: [
         'Web Developer',
         'Freelancer'
     ],
 
-    typeSpeed:75,
-    backSpeed:75,
+    typeSpeed: 75,
+    backSpeed: 75,
 
-    loop:true
+    loop: true
 })
 
-var typed = new Typed('#typed',{
-    strings:[
+var typed = new Typed('#typed', {
+    strings: [
         ' AMAZING TOGETHER...',
         'UNIQUE...'
 
     ],
 
-    typeSpeed:75,
-    backSpeed:75,
+    typeSpeed: 75,
+    backSpeed: 75,
 
-    loop:true
+    loop: true
 })
 
 
-
 $('.success-alert').fadeIn().delay(6000).fadeOut().delay(6000);
+
+
+
+$(document).ready(function(e) {
+    $win = $(window);
+    $navList = $('#nav-list');
+    $toggleButton = $('#toggle-button');
+    $toggleBar = $('#toggle-bar');
+
+    $toggleButton.click(function (e) {
+        $navList.toggleClass("nav-list-gone")
+        $toggleBar.toggleClass("fa-times")
+    });
+});
+
+
