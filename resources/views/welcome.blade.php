@@ -315,7 +315,7 @@
 
             <div class=" d-flex flex-column col-md-6 about-text">
                 <h6 class="heading"> <strong>ABOUT ME</strong></h6>
-                <h4 class="heading "> <strong>I'm Okorie Emmanuel & <span id="typed_2"></span> </strong></h4>
+                <h4 class="heading "> <strong>I'm Okorie Emmanuel & a <span id="typed_2"></span> </strong></h4>
                 <p class="real">I'm a Goal-oriented Freelance Fullstack Web Developer, who brings strong commitment to collaboration
                     and solutions-oriented problem-solving
                     with the use of various web design packages to develop custom-crafted, customer-focused websites and designs.

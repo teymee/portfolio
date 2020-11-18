@@ -1,7 +1,7 @@
 
 setTimeout(function () {
 $('.loader_bg').fadeToggle();
-},2500);
+},2000);
 
 
 var typed_2 = new Typed('#typed_2', {
