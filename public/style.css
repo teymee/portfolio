@@ -774,8 +774,8 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         box-shadow: 0px -2px 15px 5px rgba(0,0,0,1);
     }
 
-    #portfolio h2, #services h2, .about-text h4 {
-        font-size: 17px;
+    #portfolio h2, #services h4, .about-text h4 {
+        font-size: 16px;
     }
     .second{
         display:none;
