@@ -1,3 +1,9 @@
+
+setTimeout(function () {
+$('.loader_bg').fadeToggle();
+},2500);
+
+
 var typed_2 = new Typed('#typed_2', {
     strings: [
         'Web Developer',
@@ -33,7 +39,7 @@ $(document).ready(function(e) {
     $navList = $('#nav-list');
     $toggleButton = $('#toggle-button');
     $toggleBar = $('#toggle-bar');
-    $navitem1 = $('.nav-list1');
+    $navitem1 = $('.nav-item1');
     $toggleButton.click(function (e) {
         $navList.toggleClass("nav-list-gone")
         $navitem1.toggleClass("nav-list-gone")

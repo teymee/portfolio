@@ -31,6 +31,13 @@
 
 <body style="overflow-x:hidden !important;">
 
+{{--PRE-LOADER--}}
+<div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
+
+
 <header id="header" style="overflow-x:hidden !important;">
 
     @if(session()->has('session_message'))
@@ -112,10 +119,10 @@
 
             <div class="sidebar position-fixed">
                 <div class="socials ">
-                    <a href="https://github.com/teymee" target="_blank"><i class="fab fa-github "></i></a>
+                    <a href="https://github.com/teymee" target="_blank" style="z-index: 9999;"><i class="fab fa-github "></i></a>
 
-                    <a href=""><i class="fab fa-instagram " target="_blank"></i></a>
-                    <a href="https://twitter.com/_teymee?s=09" target="_blank"><i class="fab fa-twitter "></i></a>
+                    <a href="https://www.instagram.com/jst_nuel/"><i class="fab fa-instagram " target="_blank" style="z-index: 9999;"></i></a>
+                    <a href="https://twitter.com/_teymee?s=09" target="_blank" style="z-index: 9999;"><i class="fab fa-twitter "></i></a>
                 </div>
             </div>
 
@@ -235,7 +242,7 @@
         <div class="container">
             <div class="row " >
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
-                    <h2><strong>I have partnered with prominent organisations</strong></h2>
+                    <h4><strong>Helping Start-ups,small businesses and agencies acheive high quality websites and exceptional user experience </strong></h4>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
@@ -307,10 +314,13 @@
 
             <div class=" d-flex flex-column col-md-6 about-text">
                 <h6 class="heading"> <strong>ABOUT ME</strong></h6>
-                <h4 class="heading"> <strong>I'm Okorie Emmanuel & <span id="typed_2"></span> </strong></h4>
-                <p>I'm a Freelance Fullstack Web developer working remotely with
-                    the passion and focus of continually learning and building/developing awesome and complicated projects.
-                    Below are my current versatilities and progress..</p>
+                <h4 class="heading "> <strong>I'm Okorie Emmanuel & <span id="typed_2"></span> </strong></h4>
+                <p class="real">I'm a Goal-oriented Freelance Fullstack Web Developer, who brings strong commitment to collaboration
+                    and solutions-oriented problem-solving
+                    with the use of various web design packages to develop custom-crafted, customer-focused websites and designs.
+                    Committed to high standards of user experience, usability and speed for clients platforms and ideas.
+                    <br>
+                    Below are my current versatility and progress..</p>
 
                 <div class="bar-section">
                     <div class="d-flex flex-row flex-wrap justify-content-between">
