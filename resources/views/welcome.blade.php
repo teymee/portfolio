@@ -242,7 +242,7 @@
         <div class="container">
             <div class="row " >
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
-                    <h4><strong>Helping Start-ups,small businesses and agencies acheive high quality websites and exceptional user experience </strong></h4>
+                    <h4><strong>Partnering with Agencies,start-ups and small businesses to achieve high quality websites and exceptional user experience </strong></h4>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
