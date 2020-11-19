@@ -19,6 +19,7 @@
 
     }
 
+
 /*PRE-LOADER*/
 .loader_bg{
     position: fixed;
@@ -345,6 +346,7 @@ nav .navbar-nav li  a:hover{
 .socials{
     z-index:999999;
 }
+
 .point{
     margin-top: 10%;
 
@@ -434,6 +436,16 @@ nav .navbar-nav li  a:hover{
 .sidebar i{
     font-size: 20px;
     color:#BD11FA;
+}
+
+.footer-socials{
+  margin-left: 20px;
+}
+.footer-socials a{
+    font-size: 20px;
+    color:#BD11FA !important;
+    padding-right: 20px;
+
 }
 
 /*PROGRESS BARS*/
@@ -607,7 +619,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     .toggle-button{
         display: inline-block !important;
         position: fixed;
-        right: 50px;
+        right: 80px;
     }
 
     .nav-item1{
@@ -774,7 +786,7 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
         box-shadow: 0px -2px 15px 5px rgba(0,0,0,1);
     }
 
-    #portfolio h2, #services h4, .about-text h4 {
+    #portfolio h2, #services h5, .about-text h4 {
         font-size: 16px;
     }
     .second{
@@ -979,6 +991,14 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
     /*.navbar .navbar-nav > li > a:hover {*/
     /*    color:#BD11FA !important;*/
     /*}*/
+
+    .socials a{
+        z-index: 999999999;
+    }
+
+    footer{
+        z-index: 0 ;
+    }
 }
 
 

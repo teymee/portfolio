@@ -32,6 +32,7 @@
 <body style="overflow-x:hidden !important;">
 
 {{--PRE-LOADER--}}
+
 <div class="loader_bg">
     <div class="loader"></div>
 </div>
@@ -242,8 +243,8 @@
         <div class="container">
             <div class="row " >
                 <div class="col-xl-5 middle-text" data-aos="fade-up">
-                    <h4><strong>Partnering with Agencies, start-ups and small businesses to achieve high quality mobile platforms with
-                            exceptional user experience </strong></h4>
+                    <h5><strong>Partnering with Agencies, start-ups and small businesses to achieve high quality mobile platforms with
+                            exceptional user experience </strong></h5>
                     <p>Ranging from fullstack web development to UI/UX to Performance, SEO, &
                         accessibility testing</p>
 
@@ -316,8 +317,8 @@
             <div class=" d-flex flex-column col-md-6 about-text">
                 <h6 class="heading"> <strong>ABOUT ME</strong></h6>
                 <h4 class="heading "> <strong>I'm Okorie Emmanuel & a <span id="typed_2"></span> </strong></h4>
-                <p class="real">I'm a Goal-oriented Freelance Fullstack Web Developer, who brings strong commitment to collaboration
-                    and solutions-oriented problem-solving
+                <p class="real">A Goal-oriented Fullstack Web Developer, who brings strong commitment to collaboration
+                    and problem-solving
                     with the use of various web design packages to develop custom-crafted, customer-focused websites and designs.
                     Committed to high standards of user experience, usability and speed for clients platforms and ideas.
                     <br>
@@ -488,7 +489,7 @@
                 <div class="row" style="margin-bottom: 500px">
                     <div class="col">
                         <label style="margin-right: 90px">
-                            <input  type="text" name="name">
+                            <input  type="text" name="name" autofill="disable">
                             <span style="color: grey">Name</span>
                         </label>
                         @error('name')
@@ -499,7 +500,7 @@
                     <div class="space"></div>
                     <div class="col">
                         <label>
-                            <input  type="email" name="email">
+                            <input  type="email" name="email" autofill="disable">
                             <span style="color: grey">Email</span>
                         </label>
 {{--                        <label for="">Email</label>--}}
@@ -582,6 +583,12 @@
 
             <div class=" copyright col-12" style="font-size: 15" >
                 <p> <strong>Teymee17@gmail.com</strong> </p>
+                <div class="footer-socials ">
+                    <a href="https://github.com/teymee" target="_blank" style="z-index: 9999;"><i class="fab fa-github "></i></a>
+
+                    <a href="https://www.instagram.com/jst_nuel/"><i class="fab fa-instagram " target="_blank" style="z-index: 9999;"></i></a>
+                    <a href="https://twitter.com/_teymee?s=09" target="_blank" style="z-index: 9999;"><i class="fab fa-twitter "></i></a>
+                </div>
             </div>
 
 
