@@ -583,7 +583,7 @@
 
             <div class=" copyright col-12" style="font-size: 15" >
                 <p> <strong>Teymee17@gmail.com</strong> </p>
-                <div class="footer-socials ">
+                <div class="footer-socials">
                     <a href="https://github.com/teymee" target="_blank" style="z-index: 9999;"><i class="fab fa-github "></i></a>
 
                     <a href="https://www.instagram.com/jst_nuel/"><i class="fab fa-instagram " target="_blank" style="z-index: 9999;"></i></a>
