@@ -322,7 +322,7 @@
                     with the use of various web design packages to develop custom-crafted, customer-focused websites and designs.
                     Committed to high standards of user experience, usability and speed for clients platforms and ideas.
                     <br>
-                    Below are my current versatility and progress..</p>
+                    Below are my current versatilities and progress..</p>
 
                 <div class="bar-section">
                     <div class="d-flex flex-row flex-wrap justify-content-between">
@@ -482,7 +482,7 @@
         </div>
 
         <div class="col-md-6 about-text">
-            <h4 style="color: ghostwhite" class="my-3"><strong>GET IN TOUCH</strong></h4>
+            <h4 style="color: ghostwhite" class="my-3"><strong>BOOK AN APPOINTMENT</strong></h4>
 
             <form action="/message" method="post" style="width: 100%" >
                 @csrf
@@ -528,6 +528,7 @@
                 <button class="button1" role="submit"> Say Hello! </button>
 
             </form>
+            <a href="mailto:teymee17@gmail.com" class="mail-to">   <button class="button1" role="submit"> Send a direct mail </button></a>
         </div>
     </div>
 </div>
