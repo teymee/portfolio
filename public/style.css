@@ -291,7 +291,7 @@ hr{
     font-size: 12px;
 }
 
-.button1{
+.button1 , .button2{
     padding: 11px 35px;
     border-radius: 5px;
     border:none;
@@ -1002,6 +1002,14 @@ and (max-device-width : 1024px)and (-webkit-min-device-pixel-ratio: 1)
 
     footer{
         z-index: 0 ;
+    }
+
+    .button2{
+        padding: 11px 20px;
+
+    }
+    .mail-to{
+        margin-left: 150px;
     }
 }
 

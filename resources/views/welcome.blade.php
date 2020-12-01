@@ -528,7 +528,7 @@
                 <button class="button1" role="submit"> Say Hello! </button>
 
             </form>
-            <a href="mailto:teymee17@gmail.com" class="mail-to">   <button class="button1" role="submit"> Send a direct mail </button></a>
+            <a href="mailto:teymee17@gmail.com" class="mail-to">   <button class="button2" role="submit"> Send a direct mail </button></a>
         </div>
     </div>
 </div>
